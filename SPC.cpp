@@ -17,7 +17,6 @@ int main()
     int golesSegunda=rand()%100;
     int golesTercera=rand()%110;
     int golesCuarta=rand()%100;
-    int golesQuinta=rand()%70;
     int golesFinal=0;
     int sueldo=0;
     int bono=0;
@@ -26,7 +25,6 @@ int main()
     int gananciaSegunda=0;
     int gananciaTercera=0;
     int gananciaCuarta=0;
-    int gananciaQuinta=0;
     int gananciaFinal=0;
         cout<<"----------Soccer Player Career 2023 ----------"<<endl<<endl;
         cout<<"Bienvenido a SPC23"<<endl<<endl;
@@ -4665,7 +4663,7 @@ int main()
             cout<<"Para seleccionar la primer ación debes pulsar el numero numero 2+Enter"<<endl;
             cout<<"Para seleccionar la primer ación debes pulsar el numero numero 3+Enter"<<endl;
             cout<<"Para seleccionar la primer ación debes pulsar el numero numero 4+Enter"<<endl;
-            cout<<"No te equivoques ya que el juego terminara ;)"<<endl;
+            cout<<"No te equivoques ya que el juego terminara y perderas tus progreso, tus goles y tus ganancias economicas ;)"<<endl;
             cout<<"Ademas en todo momento se mostrara el numero que debes pulsar antes de la opcion"<<endl<<endl;
             cout<<"1. Salir del juego"<<endl<<endl;
             cout<<"2. Regresar al menu"<<endl<<endl;//repetir todo el codigo
@@ -4694,8 +4692,12 @@ int main()
 		
 		
 		case 4:
-			cout<<"Este es un juego de rol en donde podras tomar desisiones que guiaran la carrera de un jugador de fubol soccer"<<endl<<endl;
-            cout<<"1. Salir del juego"<<endl<<endl;
+			cout<<"Embárcate en la apasionante travesía hacia la cima del fútbol en SPC23, el juego de rol que te coloca en los zapatos de un aspirante a estrella del soccer. Toma decisiones cruciales y enfrenta desafíos en el campo en tu búsqueda de la gloria. Desde los humildes comienzos hasta las ligas internacionales, tu camino está en tus manos. ¿Conseguirás alcanzar la grandeza y convertirte en una leyenda del fútbol? La aventura está por comenzar en SPC23..."<<endl<<endl;
+            cout<<"Objetivos del jugador:"<<endl;
+            cout<<"-Conseguir la mayor cantidad de goles"<<endl;
+            cout<<"-Conseguir la moyor cantidad de ganancias economicas"<<endl;
+            cout<<"-Divertirse al maximo :)"<<endl<<endl;            
+			cout<<"1. Salir del juego"<<endl<<endl;
             cout<<"2. Regresar al menu"<<endl<<endl;//repetir todo el codigo
             cin>>respuesta;
             switch(respuesta)
@@ -4723,7 +4725,7 @@ int main()
 		
 		case 5:
 			cout<<"----Creditos----"<<endl;
-            cout<<"Universidad Auntonoma de México"<<endl;
+            cout<<"Universidad Nacional Auntonoma de México"<<endl;
             cout<<"Facultad de Estudios Superiores Aragon"<<endl;
             cout<<"Ingenieria en Computacion"<<endl;
             cout<<"Computadoras y Programación"<<endl;
