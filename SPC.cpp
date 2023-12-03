@@ -1708,6 +1708,119 @@ int main()
 						            cout<<"3. Barcelona. Condiciones: 5 temporadas de contrato,"<< oferta <<" pesos mensuales y 7000 pesos de bono por cada gol"<<endl;
 						            cout<<"4. Real Madrid. Condiciones: 5 temporadas de contrato,"<< oferta <<" pesos mensuales y 7000 pesos de bono por cada gol"<<endl;
 						            cin>>respuesta;
+						            switch (respuesta)
+						            {
+						            	case 2:
+						            		cout<<"Jugaste 5 temporadas para Mazatlan en donde obtuviste"<<endl;
+								            sueldo=oferta*12*5;
+								            bono=7000*golesCuarta;
+								            cout<<"Goles:"<<golesCuarta<<endl;
+								            cout<<"Sueldo: $"<<sueldo<<endl;
+								            cout<<"Bonos: $"<<bono<<endl<<endl;
+								            gananciaCuarta=sueldo+bono;
+								            cout<<"Ganancia economica: $"<<gananciaCuarta<<endl;
+								            if (golesCuarta==0)
+									        {
+									        cout<<"Tuviste una pesima etapa en cuanto a goles, no marcaste  ninguno"<<endl<<endl;
+									        oferta=35000;
+									        }else if(golesCuarta>0 && golesCuarta<=40)
+									        {
+									        cout<<"Tuviste una mala etapa en cuanto a goles"<<endl<<endl;
+									        oferta=50000;
+									        }else if(golesCuarta>40 && golesCuarta<=80)
+									        {
+									        cout<<"Tuviste una buena etapa en cuanto a goles"<<endl<<endl;
+									        oferta=80000;
+									        }else if (golesCuarta>80)
+									        {
+									        cout<<"Tuviste una exelente etapa en cuanto a goles"<<endl<<endl;
+									        oferta=100000;
+									        }
+									        cout<<"FELICIDADES LLEGASTE AL FINAL DEL JUEGO"<<endl;
+            								cout<<"OBTUVISTE:"<<endl;
+								            golesFinal=golesPrimera+golesSegunda+golesTercera+golesCuarta;
+								            cout<<"Goles:"<<golesFinal<<endl;
+								            gananciaFinal=gananciaPrimera+gananciaSegunda+gananciaTercera+gananciaCuarta;
+											cout<<"Ganancias economicas: $" <<gananciaFinal<<endl;
+						            	break;
+						            	
+						            	
+										case 3:
+						            		cout<<"Jugaste 5 temporadas para Barcelona en donde obtuviste"<<endl;
+								            sueldo=oferta*12*5;
+								            bono=7000*golesCuarta;
+								            cout<<"Goles:"<<golesCuarta<<endl;
+								            cout<<"Sueldo: $"<<sueldo<<endl;
+								            cout<<"Bonos: $"<<bono<<endl<<endl;
+								            gananciaCuarta=sueldo+bono;
+								            cout<<"Ganancia economica: $"<<gananciaCuarta<<endl;
+								            if (golesCuarta==0)
+									        {
+									        cout<<"Tuviste una pesima etapa en cuanto a goles, no marcaste  ninguno"<<endl<<endl;
+									        oferta=35000;
+									        }else if(golesCuarta>0 && golesCuarta<=40)
+									        {
+									        cout<<"Tuviste una mala etapa en cuanto a goles"<<endl<<endl;
+									        oferta=50000;
+									        }else if(golesCuarta>40 && golesCuarta<=80)
+									        {
+									        cout<<"Tuviste una buena etapa en cuanto a goles"<<endl<<endl;
+									        oferta=80000;
+									        }else if (golesCuarta>80)
+									        {
+									        cout<<"Tuviste una exelente etapa en cuanto a goles"<<endl<<endl;
+									        oferta=100000;
+									        }
+									        cout<<"FELICIDADES LLEGASTE AL FINAL DEL JUEGO"<<endl;
+            								cout<<"OBTUVISTE:"<<endl;
+								            golesFinal=golesPrimera+golesSegunda+golesTercera+golesCuarta;
+								            cout<<"Goles:"<<golesFinal<<endl;
+								            gananciaFinal=gananciaPrimera+gananciaSegunda+gananciaTercera+gananciaCuarta;
+											cout<<"Ganancias economicas: $" <<gananciaFinal<<endl;
+						            	break;
+						            	
+						            	
+						            	case 4:
+						            		cout<<"Jugaste 5 temporadas para Real Madrid en donde obtuviste"<<endl;
+								            sueldo=oferta*12*5;
+								            bono=7000*golesCuarta;
+								            cout<<"Goles:"<<golesCuarta<<endl;
+								            cout<<"Sueldo: $"<<sueldo<<endl;
+								            cout<<"Bonos: $"<<bono<<endl<<endl;
+								            gananciaCuarta=sueldo+bono;
+								            cout<<"Ganancia economica: $"<<gananciaCuarta<<endl;
+								            if (golesCuarta==0)
+									        {
+									        cout<<"Tuviste una pesima etapa en cuanto a goles, no marcaste  ninguno"<<endl<<endl;
+									        oferta=35000;
+									        }else if(golesCuarta>0 && golesCuarta<=40)
+									        {
+									        cout<<"Tuviste una mala etapa en cuanto a goles"<<endl<<endl;
+									        oferta=50000;
+									        }else if(golesCuarta>40 && golesCuarta<=80)
+									        {
+									        cout<<"Tuviste una buena etapa en cuanto a goles"<<endl<<endl;
+									        oferta=80000;
+									        }else if (golesCuarta>80)
+									        {
+									        cout<<"Tuviste una exelente etapa en cuanto a goles"<<endl<<endl;
+									        oferta=100000;
+									        }
+									        cout<<"FELICIDADES LLEGASTE AL FINAL DEL JUEGO"<<endl;
+            								cout<<"OBTUVISTE:"<<endl;
+								            golesFinal=golesPrimera+golesSegunda+golesTercera+golesCuarta;
+								            cout<<"Goles:"<<golesFinal<<endl;
+								            gananciaFinal=gananciaPrimera+gananciaSegunda+gananciaTercera+gananciaCuarta;
+											cout<<"Ganancias economicas: $" <<gananciaFinal<<endl;
+						            	break;	
+						            	case 1:
+											cout << "Saliendo del programa." << endl;
+									        return 0;
+									    break;
+									    default:
+									        cout << "Te equivocaste" <<endl<<endl;
+									        cout << "Game over" <<endl<<endl;
+									}						            						            						            
 						        break;    
 						            
 						            
